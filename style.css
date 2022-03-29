@@ -1,0 +1,57 @@
+.body {
+  font-family: 'Monserrat', 'Open Sans', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  color: black;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hero-container {
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar-hero {
+  width: 364px;
+  border-radius: 5px;
+}
+
+.about-me-container {
+  background-color: #A68DAD;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-me-container h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-family: 'Monserrat', sans-serif;
+}
+
+.skills-container {
+  height: auto;
+  width: 100%;
+}
+
+.projects-container {
+  height: 100vh;
+}
+
+
+.contact-me-container {
+  height: 100vh;
+}
