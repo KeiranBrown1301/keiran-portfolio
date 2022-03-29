@@ -8,6 +8,44 @@ body {
   background-color: #DFD3C3;
 }
 
+nav {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+span.nav-toggle {
+  font-size: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  padding: 5px 50px;
+}
+
+nav ul li:first-child {
+  margin-top: 0;
+}
+
+nav ul li:hover {
+  opacity: 0.5;
+}
+
 .hero-container {
   height: 100%;
   width: 100%;
@@ -26,7 +64,8 @@ body {
 }
 
 .about-me-container {
-  background-color: #A68DAD;
+  /* background-color: #A68DAD; */
+  background-color: #FFE8DF;
   height: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -53,7 +92,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #A68DAD;
+  /* background-color: #A68DAD; */
+  background-color: #FFE8DF;
 }
 
 .skills-container ul {
@@ -67,4 +107,30 @@ body {
 
 .contact-me-container {
   height: 100vh;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    height: 100px;
+    flex-direction: row;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 70px 0 0;
+    text-align: left;
+    border-bottom-style: none;
+    padding: 0;
+  }
+
+  span.nav-toggle {
+    display: none;
+  }
 }

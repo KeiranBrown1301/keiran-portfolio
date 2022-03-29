@@ -15,7 +15,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
+  <script src="https://kit.fontawesome.com/892989bbff.js" crossorigin="anonymous"></script>
 
   <title>Keiran Brown - Fullstack Web Developer</title>
 </head>
@@ -23,8 +23,22 @@
   <body>
     <div>
 
+
       <!-- Hero -->
       <div class="hero-container my-4">
+
+        <nav>
+          <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <ul id="js-menu">
+            <li>About Me</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+
         <div class="d-flex justify-content-center">
           <img src="images/keiran-head-shot.png" alt="Photo of Keiran's face." class="avatar-hero mx-3">
           <div class="d-flex flex-column justify-content-center">
@@ -67,7 +81,10 @@
 
       <!-- Projects -->
       <div id="projects" class="projects-container">
-        <h1>My recent projects.</h1>
+        <div class="d-flex flex-column align-items-center my-5">
+          <div class="row d-flex justify-content-center">
+            <h1 class="col-12">My recent projects.</h1>
+          </div>
         <!-- Carousel in here with descriptions, links to the code and websites and gifs -->
       </div>
 
@@ -176,10 +193,15 @@
 
       <!-- contact me -->
       <div id="contact-me" class="contact-me-container">
-        <h1>Have a question? Hit me up!</h1>
-        <a href="https://www.linkedin.com/in/keiranbrown1301/" target="_blank">Linkedin</a>
-        <a href="https://github.com/KeiranBrown1301" target="_blank">Github</a>
-        <a href="/#">Top</a>
+             <div class="d-flex flex-column align-items-center my-5">
+
+          <div class="row d-flex justify-content-center">
+            <h1 class="col-12">Have a question? Hit me up 😁</h1>
+          </div>
+
+        <a href="https://www.linkedin.com/in/keiranbrown1301/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/KeiranBrown1301" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+        <a href="/#"><i class="fa-solid fa-angles-up"></i></a>
       </div>
 
       <!-- JS Scripts -->
