@@ -46,6 +46,11 @@ nav ul li:hover {
   opacity: 0.5;
 }
 
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
 .hero-container {
   height: 100%;
   width: 100%;
@@ -107,6 +112,10 @@ nav ul li:hover {
 
 .contact-me-container {
   height: 100vh;
+}
+
+.active {
+  display: flex;
 }
 
 @media screen and (min-width: 800px) {
