@@ -148,6 +148,26 @@ nav a:hover {
   padding-bottom: 24px;
 }
 
+.fa-brands, .fa-solid {
+  font-size: 2rem;
+  padding: 8px;
+  color: black;
+  transition: .5s;
+}
+
+.fa-brands:hover, .fa-solid:hover {
+  color: #F0F0F0;
+  transform: translateY(-7px);
+}
+
+.form-button {
+  border-radius: 12px;
+  padding: 6px 12px;
+  margin-top: 8px;
+  color: white;
+  background-color: #888888;
+}
+
 @media screen and (min-width: 800px) {
   nav {
     height: 100px;
