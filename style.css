@@ -136,6 +136,14 @@ nav a:hover {
   padding-bottom: 8px;
 }
 
+.form input {
+  width: 300px;
+}
+
+.form label {
+  padding-top: 8px;
+}
+
 .form-container {
   padding-bottom: 24px;
 }
