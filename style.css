@@ -168,6 +168,11 @@ nav a:hover {
   background-color: #888888;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 @media screen and (min-width: 800px) {
   nav {
     height: 100px;

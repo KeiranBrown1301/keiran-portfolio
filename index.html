@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <script src="https://kit.fontawesome.com/892989bbff.js" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
   <title>Keiran Brown - Fullstack Web Developer</title>
 </head>
 
@@ -43,10 +45,14 @@
         <div class="d-flex justify-content-center">
           <img src="images/keiran-head-shot.png" alt="Photo of Keiran's face." class="avatar-hero mx-3">
           <div class="d-flex flex-column justify-content-center">
-            <h1>Gday!</h1>
+            <h1>G'day!</h1>
             <h1>My name's Keiran.</h1>
             <h1>I'm a Full-stack</h1>
             <h1>web developer.</h1>
+        <div class="footer-links d-flex mx-3">
+          <a href="https://www.linkedin.com/in/keiranbrown1301/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/KeiranBrown1301" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+        </div>
             <!-- <h1>It's nice to meet you.</h1> -->
           </div>
         </div>
@@ -87,6 +93,31 @@
             <h1 class="col-12">My recent projects.</h1>
           </div>
         <!-- Carousel in here with descriptions, links to the code and websites and gifs -->
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div>
+                  <h1>Chirpy.</h1>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <h1>Two-Bridal</h1>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
       </div>
 
       <!-- My skills -->
@@ -219,10 +250,10 @@
               </form>
             </div>
 
-        <div class="footer-links d-flex justify-content-center mx-5">
+        <!-- <div class="footer-links d-flex justify-content-center mx-5">
           <a href="https://www.linkedin.com/in/keiranbrown1301/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/KeiranBrown1301" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-        </div>
+        </div> -->
 
         <div class="footer-links d-flex justify-content-center mx-5">
           <a href="#hero"><i class="fa-solid fa-angles-up"></i></a>
@@ -234,6 +265,29 @@
     <!-- JS Scripts -->
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
 
   </body>
 </html>
